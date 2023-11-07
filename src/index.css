@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  @apply flex justify-center;
+}
+
+input[type="file"]::file-selector-button {
+  @apply px-4 py-2 text-sm bg-gray-800 appearance-none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: unset;
+  margin-right: 8px;
+}
